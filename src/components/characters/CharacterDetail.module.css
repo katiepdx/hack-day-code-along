@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f2c300;
+  --red: #df0000;
+  --blue: #0099f6;
+  --dark-blue: #114463;
+}
+
+.detailBox {
+  position: relative;
+  background: var(--blue);
+  padding: 15vh 2em 2em 2em;
+
+  animation: grow .5s ease;
+}
+
+h1 {
+  font-family: 'Roddenberry';
+  font-size: 4.5em;
+  color: var(--yellow);
+  letter-spacing: .1em;
+  text-shadow: var(--red) 2px 2px;
+}
+
+h2 {
+  color: var(--dark-blue);
+  text-shadow: black 1px 1px 2px;
+}
+
+.characterPic {
+  min-width: 50vw;
+  max-width: 60vw;
+  border: var(--yellow) solid 2px;
+  border-radius: 20px;
+  box-shadow: var(--dark-blue) 4px 4px 4px, inset var(--dark-blue)  4px 4px;
+}
+
+button {
+  border: solid var(--red) 3px;
+  border-radius: 10px;
+  padding: .3em;
+  box-shadow: var(--dark-blue) 2px 2px 2px, inset var(--yellow) 2px 2px ;
+  font-size: 1.5em;
+  text-shadow: var(--dark-blue) 1px 1px;
+  color: var(--yellow);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.loadingBox {
+  position: relative;
+  padding-top: 10vh;
+  height: 100vh;
+  background: var(--blue);
+}
+
+.loadingMessage {
+  margin-top: 20vh;
+}
+
+@keyframes grow {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}

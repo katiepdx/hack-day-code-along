@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f2c300;
+  --red: #df0000;
+  --blue: #0099f6;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: var(--blue);
+  min-height: 100vh;
+
+}
+
+.App {
+  text-align: center;
+}
