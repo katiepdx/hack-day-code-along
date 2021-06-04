@@ -5,7 +5,7 @@ import styles from './CharacterList.module.css';
 
 
 const CharacterList: React.FC = () => {
-  
+
   const { characters, loading } = useCharacters()
 
   const characterItems = characters.map(
@@ -20,7 +20,7 @@ const CharacterList: React.FC = () => {
   )
 
 
-  if(loading) return <h1>Nomad Loading...</h1>
+  if (loading) return <h1>Nomad Loading...</h1>
 
   return (
     <div className={styles.listBox} >
